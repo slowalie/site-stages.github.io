@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYStage - Espace Entreprise</title>
+    <link rel="stylesheet" href="./assests/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <button class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="logo">
+                    <div class="logo-circle">logo</div>
+                    <span class="site-name"><a href="index.html">HYStage</a></span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="offre.html">Offres</a></li>
+                <li><a href="espace_entreprise.html" class="active">Entreprises</a></li>
+                <li><a href="conseil.html">Conseil</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="connexion.html" class="btn btn-outline">Connexion</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h1>Renseigner votre offre</h1>
+            
+            <div class="image-upload">
+                <div class="image-placeholder upload">
+                    <div class="placeholder-icon"></div>
+                </div>
+            </div>
+
+            <form class="offer-form">
+                <div class="form-group">
+                    <input type="text" placeholder="intituler du post" class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <select class="form-select">
+                        <option value="">type de l'offre</option>
+                        <option value="stage">Stage</option>
+                        <option value="alternance">Alternance</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Date de début</label>
+                        <input type="date" class="form-input" value="2026-01-31">
+                    </div>
+                    <div class="form-group">
+                        <label>Date de fin</label>
+                        <input type="date" class="form-input" value="2026-01-31">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Niveau d'étude</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked>
+                            <span>Bac +2</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked>
+                            <span>Bac +3</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked>
+                            <span>Bac +4</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked>
+                            <span>Bac +5</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Description du poste</label>
+                    <textarea class="form-textarea" rows="6"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Publier</button>
+                    <button type="reset" class="btn btn-outline">Réinitialiser</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 HYStage. Tous droits réservés.</p>
+            <a href="index.html">HYStage</a>
+        </div>
+    </footer>
+</body>
+</html>
