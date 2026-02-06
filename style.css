@@ -80,17 +80,30 @@ header {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    background: none;
-    border: none;
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
     cursor: pointer;
     padding: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+
 }
 
 .menu-btn span {
     width: 20px;
     height: 2px;
-    background-color: var(--text-color);
+    background-color: var(--primary-color);
     transition: 0.3s;
+}
+
+.menu-btn:hover {
+    background-color: var(--secondary-color);
+        span{
+            background-color: var(--white);
+        }
+        box-shadow: var(--shadow-or);
+   
 }
 
 .logo {
